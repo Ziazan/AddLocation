@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.addlocation.MainActivity"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="司机名称" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_identity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证号" />
+
+    <EditText
+        android:id="@+id/edt_identity_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌号" />
+
+    <EditText
+        android:id="@+id/edt_plate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号码" />
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10" />
+
+</LinearLayout>
+<Button
+    android:id="@+id/btn_insert_driver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="注册司机" />
+<Button
+    android:id="@+id/btn_show"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="显示当前经纬度信息" />
+<Button
+    android:id="@+id/btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="提交当前经纬度" />
+
+<TextView
+    android:id="@+id/tv_loc_imform"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="位置信息："
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<EditText
+    android:id="@+id/edt_loc_imform"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textMultiLine" />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+    android:id="@+id/tv_http_imform"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="请求结果:"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<EditText
+    android:id="@+id/edt_http_imform"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textMultiLine" />
+    
+</LinearLayout>
+
+    
+</LinearLayout>
+
+
